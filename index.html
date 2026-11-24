@@ -1,0 +1,145 @@
+<!DOCTYPE html> <!-- Declara que el documento usa el estándar HTML5 -->
+<html lang="es"> <!-- Elemento raíz; lang="es" indica que el contenido está en español -->
+<head> <!-- Contiene metadatos e información no visible directamente -->
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiales y acentos correctamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive en móviles -->
+    <title>Burger JPS</title> <!-- Texto que aparece en la pestaña del navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Conexión anticipada a Google Fonts para cargar más rápido -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Conexión anticipada al CDN de fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Importa la fuente decorativa y Roboto -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo de estilos externo -->
+</head> <!-- Fin del bloque head -->
+<body> <!-- Inicio del contenido visible de la página -->
+
+    <!-- ========== SECCIÓN HERO (fondo amarillo con header integrado) ========== -->
+    <section class="hero-section"> <!-- Sección principal con fondo amarillo que incluye header y hero -->
+
+        <header class="site-header"> <!-- Barra superior con logo, contacto y navegación -->
+            <div class="container header-inner"> <!-- Contenedor centrado para alinear el header -->
+                <div class="brand"> <!-- Bloque del logotipo de la marca -->
+                    <div class="brand-icon" aria-hidden="true"> <!-- Icono decorativo de hamburguesa (solo visual) -->
+                        <span class="bun-top"></span> <!-- Capa superior del pan del icono -->
+                        <span class="patty"></span> <!-- Capa de carne del icono -->
+                        <span class="bun-bottom"></span> <!-- Capa inferior del pan del icono -->
+                    </div> <!-- Fin del icono -->
+                    <span class="brand-name">BURGER MAX TripleTen</span> <!-- Nombre de la marca en mayúsculas -->
+                </div> <!-- Fin del bloque brand -->
+
+                <div class="header-right"> <!-- Columna derecha con contacto y menú -->
+                    <div class="delivery-info"> <!-- Información de entrega express -->
+                        <span class="delivery-icon" aria-hidden="true">🛵</span> <!-- Icono de moto de reparto -->
+                        <span class="delivery-label">Entrega en 30 minutos o la burger es gratis</span> <!-- Texto del servicio de entrega -->
+                        <span class="delivery-phone">+57 3235310366</span> <!-- Número telefónico de contacto -->
+                    </div> <!-- Fin de delivery-info -->
+                    <nav class="main-nav" aria-label="Navegación principal"> <!-- Menú de navegación accesible -->
+                        <a href="#home" class="nav-link">INICIO</a> <!-- Enlace a la sección inicio -->
+                        <a href="#menu" class="nav-link">MENU</a> <!-- Enlace a la sección menú -->
+                        <a href="#events" class="nav-link">EVENTOS</a> <!-- Enlace a la sección eventos -->
+                        <a href="#contact" class="nav-link">CONTACTOS</a> <!-- Enlace a la sección contacto -->
+                    </nav> <!-- Fin del menú de navegación -->
+                </div> <!-- Fin de header-right -->
+            </div> <!-- Fin del contenedor del header -->
+        </header> <!-- Fin del header -->
+
+        <div id="home" class="container hero-content"> <!-- Contenedor del contenido principal del hero -->
+            <div class="hero-text"> <!-- Columna izquierda con textos promocionales -->
+                <p class="hero-tagline">PRUEBA NUESTRA BURGER</p> <!-- Etiqueta con borde sobre el título -->
+                <h1 class="hero-title"> <!-- Título principal dividido en dos líneas -->
+                    <span class="title-line">BURGER</span> <!-- Primera línea del título grande -->
+                    <span class="title-line">MAX WEEK</span> <!-- Segunda línea del título grande -->
+                </h1> <!-- Fin del h1 -->
+            </div> <!-- Fin de hero-text -->
+
+            <div class="hero-visual"> <!-- Columna derecha con imagen de comida -->
+                <div class="price-badge" aria-label="Precio promocional 5 dólares 49 centavos"> <!-- Badge circular de precio -->
+                    <span class="price-amount">$555.49</span> <!-- Monto del precio -->
+                    <span class="price-only">SOLO</span> <!-- Texto complementario del precio -->
+                </div> <!-- Fin del badge de precio -->
+            </div> <!-- Fin de hero-visual -->
+        </div> <!-- Fin del contenedor hero-content -->
+    </section> <!-- Fin de la sección hero -->
+
+    <!-- ========== SECCIÓN DE TARJETAS PROMOCIONALES ========== -->
+    <section class="promo-section" aria-label="Promociones destacadas"> <!-- Sección con tres banners promocionales -->
+        <div class="container promo-grid"> <!-- Grid con una tarjeta grande y dos pequeñas -->
+
+            <article class="promo-card promo-card-large"> <!-- Tarjeta grande: hamburguesa más popular -->
+                <div class="promo-overlay"></div> <!-- Capa oscura sobre la imagen para legibilidad del texto -->
+                <div class="promo-text"> <!-- Contenedor del texto sobre la imagen -->
+                    <span class="promo-eyebrow">TRY IT TODAY</span> <!-- Texto pequeño superior -->
+                                <h2 class="promo-title">La mas barata</h2> <!-- Título principal de la promoción -->
+                </div> <!-- Fin del texto promocional -->
+            </article> <!-- Fin de promo-card-large -->
+
+            <div class="promo-stack"> <!-- Columna con dos tarjetas apiladas verticalmente -->
+                <article class="promo-card promo-card-small promo-card-fun"> <!-- Tarjeta superior: más diversión -->
+                    <div class="promo-overlay"></div> <!-- Capa oscura sobre la imagen -->
+                    <div class="promo-text"> <!-- Texto sobre la imagen -->
+                        <span class="promo-eyebrow">TRY IT TODAY</span> <!-- Texto pequeño superior -->
+                        <h2 class="promo-title">No tan barata!</h2> <!-- Título de la promoción -->
+                    </div> <!-- Fin del texto -->
+                </article> <!-- Fin de promo-card-fun -->
+
+                <article class="promo-card promo-card-small promo-card-chili"> <!-- Tarjeta inferior: fresco y picante -->
+                    <div class="promo-overlay"></div> <!-- Capa oscura sobre la imagen -->
+                    <div class="promo-text"> <!-- Texto sobre la imagen -->
+                        <span class="promo-eyebrow">TRY IT TODAY</span> <!-- Texto pequeño superior -->
+                        <h2 class="promo-title">Se vale Soñar!!!</h2> <!-- Título de la promoción (ampersand escapado) -->
+                    </div> <!-- Fin del texto -->
+                </article> <!-- Fin de promo-card-chili -->
+            </div> <!-- Fin de promo-stack -->
+
+        </div> <!-- Fin del grid promocional -->
+    </section> <!-- Fin de promo-section -->
+
+    <!-- ========== SECCIÓN CHOOSE & ENJOY (MENÚ) ========== -->
+    <section id="menu" class="menu-section"> <!-- Sección de productos con fondo blanco -->
+        <div class="container menu-intro"> <!-- Encabezado centrado de la sección menú -->
+            <span class="section-badge">ALWAYS TASTY BURGER</span> <!-- Etiqueta amarilla sobre el título -->
+            <h2 class="section-title">CHOOSE &amp; ENJOY</h2> <!-- Título principal de la sección -->
+            <p class="section-description"> <!-- Párrafo descriptivo de la sección -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p> <!-- Fin del párrafo descriptivo -->
+        </div> <!-- Fin de menu-intro -->
+
+        <div class="container menu-grid"> <!-- Grid de tres tarjetas de productos -->
+            <article class="menu-card"> <!-- Primera tarjeta de producto -->
+                <div class="menu-card-image menu-img-1"></div> <!-- Imagen de fondo de la hamburguesa 1 -->
+                <h3 class="menu-card-title">LOREM IPSUM DOLOR</h3> <!-- Nombre del producto -->
+                <p class="menu-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p> <!-- Descripción corta -->
+                <a href="#contact" class="btn-order">ORDER NOW</a> <!-- Botón de pedido -->
+            </article> <!-- Fin de la primera tarjeta -->
+
+            <article class="menu-card menu-card-featured"> <!-- Segunda tarjeta (destacada con sombra) -->
+                <div class="menu-card-image menu-img-2"></div> <!-- Imagen de fondo de la hamburguesa 2 -->
+                <h3 class="menu-card-title">LOREM IPSUM DOLOR</h3> <!-- Nombre del producto -->
+                <p class="menu-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p> <!-- Descripción corta -->
+                <a href="#contact" class="btn-order">ORDER NOW</a> <!-- Botón de pedido -->
+            </article> <!-- Fin de la tarjeta destacada -->
+
+            <article class="menu-card"> <!-- Tercera tarjeta de producto -->
+                <div class="menu-card-image menu-img-3"></div> <!-- Imagen de fondo de la hamburguesa 3 -->
+                <h3 class="menu-card-title">LOREM IPSUM DOLOR</h3> <!-- Nombre del producto -->
+                <p class="menu-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p> <!-- Descripción corta -->
+                <a href="#contact" class="btn-order">ORDER NOW</a> <!-- Botón de pedido -->
+            </article> <!-- Fin de la tercera tarjeta -->
+        </div> <!-- Fin del grid de menú -->
+    </section> <!-- Fin de menu-section -->
+
+    <!-- ========== SECCIONES ADICIONALES (EVENTS y CONTACT) ========== -->
+    <section id="events" class="info-section"> <!-- Sección de eventos referenciada en el menú -->
+        <div class="container"> <!-- Contenedor centrado -->
+            <h2 class="info-title">EVENTS</h2> <!-- Título de la sección eventos -->
+            <p class="info-text">Próximamente: Burger Week, noches de música en vivo y promociones especiales.</p> <!-- Texto informativo -->
+        </div> <!-- Fin del contenedor -->
+    </section> <!-- Fin de events -->
+
+    <footer id="contact" class="site-footer"> <!-- Pie de página con id contact para el enlace del menú -->
+        <div class="container footer-inner"> <!-- Contenedor del footer -->
+            <p class="footer-text">&copy; 2026 Burger JPS. Todos los derechos reservados.</p> <!-- Copyright -->
+            <p class="footer-contact">Contacto: +57 3235310366 | info@JPSBurger.com</p> <!-- Datos de contacto -->
+        </div> <!-- Fin del contenedor del footer -->
+    </footer> <!-- Fin del footer -->
+
+</body> <!-- Fin del cuerpo del documento -->
+</html> <!-- Fin del documento HTML -->
